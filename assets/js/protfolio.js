@@ -10,7 +10,8 @@
         $('.modal .data').html('');
 
         let data = $(this).siblings('.portfolio-item-img').find($('.project-data')).html();
-        $('.modal .data').html(data);
+        let project_desc = '<b>Project Description: </b> <br>' + $(this).siblings('span.category').text() + '<br><br>'
+        $('.modal .data').html(project_desc + data);
 
         $('.modal .modal-title').html(name+' Info:');
         $('.modal').modal('show');
