@@ -5651,3 +5651,9 @@ a.post-thumbnail:hover {
     padding-left: 5px;
   }
 }
+
+@media (max-width: 1359px) {
+  .portfolio-item-img,.portfolio-grid img{
+    height: 100%;
+  }
+}
